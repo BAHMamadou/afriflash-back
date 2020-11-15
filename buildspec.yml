@@ -1,0 +1,13 @@
+version: 0.2
+
+phases:
+  pre_build:
+    commands:
+      - npm i
+  build:
+    commands:
+      - run-script build
+artifacts:
+  files:
+    - '**/*'
+  base-directory: out
